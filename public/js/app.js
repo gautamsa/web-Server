@@ -1,6 +1,6 @@
 console.log('Clint side javascript file loaded');
 
-fetch('http://localhost:3000/weather?address=jaipur').then((response) => {
+fetch('/weather?address=jaipur').then((response) => {
     response.json().then((data) => {
         if (!data.error) {
             console.log(data);
